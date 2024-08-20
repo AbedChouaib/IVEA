@@ -18,7 +18,8 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 - Download test data: [Test data](https://cloud.hiz-saarland.de/s/zwipttdc6ySCLzC)
 - Drag and drop IVEA jar file into ImageJ, then restart ImageJ. (or copy paste it to ImageJ plugin directory)
 
-# Usage [Manual](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20Manual.pdf)
+# Usage
+- [Get IVEA manual](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20Manual.pdf)
 - Run IVEA via the ImageJ menu, located under "Plugin".
 - IVEA offers three different analysis types, each accessible via a dedicated tab: "Hotspot Area", "Fixed Event", and "Non-Fixed Event".
 - Select the appropriate tab based on the nature of the analysis. (note: "Fixed Event" analysis doesn't work on the "Non-Fixed Event").
