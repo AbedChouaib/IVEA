@@ -1,4 +1,3 @@
-# IVEA
 ![Logo](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20logo%20x256.png)
 
 # About
