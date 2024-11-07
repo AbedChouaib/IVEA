@@ -32,4 +32,5 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 -  user friendlu GUI.
 -  Pretrained models available within IVEA.
 -  Trainable software.
+-  Accept image stack of any resolution and length.
 -  Super fast, down to few seconds per video analysis. (256x256, 3000 frames)
