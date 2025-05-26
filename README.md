@@ -2,37 +2,133 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15498139.svg)](https://doi.org/10.5281/zenodo.15498139)
 
+![Logo](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20logo%20x256.png)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15498139.svg)](https://doi.org/10.5281/zenodo.15498139)
+
 # About
+
 Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji plugin that employs artificial intelligence to detect and analyze exocytosis.
-[paper](https://www.biorxiv.org/content/10.1101/2024.08.02.606323v1)
+[Read the paper](https://www.biorxiv.org/content/10.1101/2024.08.02.606323v1)
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Python Setup](#python-setup)
 
 # Installation
-- Download latest plugin: [Get latest plugin](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.3)
-- Download plugin (paper results version 2): [Get plugin](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.1.1)
-- Get source code: [Source code](https://cloud.hiz-saarland.de/s/eEaF4A8eWpr88Qf)
-- Download Fiji: [ImageJ Fiji](https://imagej.net/software/fiji/)
-- Download test data: [Test data](https://cloud.hiz-saarland.de/s/zwipttdc6ySCLzC)
-- Drag and drop IVEA jar file into ImageJ, then restart ImageJ. (or copy paste it to ImageJ plugin directory)
+
+* Download latest plugin: [IVEA v2.3](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.3)
+* Download plugin used in paper (v2.1.1): [IVEA v2.1.1](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.1.1)
+* Get source code: [Source code](https://cloud.hiz-saarland.de/s/eEaF4A8eWpr88Qf)
+* Download Fiji: [ImageJ Fiji](https://imagej.net/software/fiji/)
+* Download test data: [Test data](https://cloud.hiz-saarland.de/s/zwipttdc6ySCLzC)
+* Install plugin by dragging the JAR into ImageJ or copying it to the `plugins/` directory.
 
 # Usage
-- [Get IVEA manual](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20Manual_v2.0.pdf)
-- Run IVEA via the ImageJ menu, located under "Plugin".
-- IVEA offers three different analysis types, each accessible via a dedicated tab: "Hotspot Area", "Fixed Event", and "Non-Fixed Event".
-- Select the appropriate tab based on the nature of the analysis. (note: "Fixed Event" analysis doesn't work on the "Non-Fixed Event").
-- Select the import type in the check box: Video, Video directory or Image sequence (experimental!).
-- Import your data, then press start.
-- A GPU is not required for the analysis phase, whereas it is essential for the training phase. 
+
+* Get the manual: [IVEA Manual v2.0 (PDF)](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20Manual_v2.0.pdf)
+* Launch IVEA from ImageJ under "Plugins"
+* Select one of the three modes: "Hotspot Area", "Fixed Event", "Non-Fixed Event"
+* Choose the data import type: Video, Directory, or Image Sequence (experimental)
+* Press Start to begin analysis
+
+> GPU is optional for analysis, but required for training.
 
 # Features
--  Intelligent software which employ Vision Transformer network and LSTM network for exocytosis detection in wide range of cells.
--  Open source "plug and play" fully automated software.
--  user friendlu GUI.
--  Pretrained models available within IVEA.
--  Trainable software.
--  Accept image stack of any resolution and length.
--  Super fast, down to few seconds per video analysis. (256x256, 3000 frames)
+
+* Vision Transformer + LSTM architecture for robust event detection
+* Fully automated, "plug and play" design
+* User-friendly GUI
+* Comes with pretrained models
+* Accepts any resolution or stack length
+* Blazing fast analysis: \~seconds per video (e.g., 256x256, 3000 frames)
+
+# Python Setup
+
+## Project Environment
+
+**Project Name**: IVEA
+**Python Version**: 3.8.10
+**TensorFlow Version**: 2.10.1 (CUDA 11.2 / cuDNN 8.1.1)
+
+Contains:
+
+* `IVEA_main/` folder with all training scripts
+* `requirements.txt` – core dependencies (excluding TF)
+* `TensorFlow_Libs.txt` – pinned versions for TF 2.10.1 compatibility
+
+## 🔧 Recommended Setup
+
+We recommend using **Anaconda**:
+
+```bash
+conda create -n IVEA python=3.8.10
+conda activate IVEA
+```
+
+Alternatively with `venv`:
+
+```bash
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+```
+
+## 📦 Installing Dependencies
+
+Install base packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Install TensorFlow stack:
+
+```bash
+pip install -r TensorFlow_Libs.txt
+```
+
+## ⚡ GPU Acceleration
+
+Ensure your system has:
+
+* CUDA 11.2
+* cuDNN 8.1.1
+* Compatible NVIDIA driver
+
+## 🖥️ Using with VS Code
+
+```bash
+cd path/to/IVEA/IVEA_main
+code .
+```
+
+Open Command Palette (Ctrl+Shift+P), select **Python: Select Interpreter**, and choose:
+
+* `IVEA` (Conda env), or
+* `venv` (local virtualenv)
+
+## ▶️ Running IVEA
+
+Launch the training GUI:
+
+```bash
+python IVEA_main.py
+```
+
+## 🔧 Configuration Files
+
+Located in the `settings/` folder:
+
+* `ivea_default_config.json`
+* `ivea_GranuData_config.json`
+* `ivea_NeuroData_config.json`
+
+> Changing the model type automatically loads the matching config.
+> For new sessions, defaults are used unless changed manually.
+
