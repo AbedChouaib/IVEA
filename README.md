@@ -1,6 +1,5 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15498139.svg)](https://doi.org/10.5281/zenodo.15498139)
-
 ![Logo](https://github.com/AbedChouaib/IVEA/blob/main/resources/IVEA%20logo%20x256.png)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15498139.svg)](https://doi.org/10.5281/zenodo.15498139)
 
 # About
 Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji plugin that employs artificial intelligence to detect and analyze exocytosis.
