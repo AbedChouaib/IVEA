@@ -10,7 +10,7 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 - [Features](#features)
 
 # Installation
-- Download latest plugin: [Get latest plugin](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.2)
+- Download latest plugin: [Get latest plugin](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.3)
 - Download plugin (paper results version 2): [Get plugin](https://github.com/AbedChouaib/IVEA/releases/tag/IVEA_v2.1.1)
 - Get source code: [Source code](https://cloud.hiz-saarland.de/s/eEaF4A8eWpr88Qf)
 - Download Fiji: [ImageJ Fiji](https://imagej.net/software/fiji/)
@@ -27,7 +27,7 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 - A GPU is not required for the analysis phase, whereas it is essential for the training phase. 
 
 # Features
--  Intelligent software which employ Vision Transformer network and LSTM network for exocytosis detectionin wide range of cells.
+-  Intelligent software which employ Vision Transformer network and LSTM network for exocytosis detection in wide range of cells.
 -  Open source "plug and play" fully automated software.
 -  user friendlu GUI.
 -  Pretrained models available within IVEA.
