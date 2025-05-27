@@ -56,7 +56,7 @@ Contains:
 * `requirements.txt` – core dependencies (excluding TF)
 * `TensorFlow_Libs.txt` – pinned versions for TF 2.10.1 compatibility
 
-## 🔧 Recommended Setup
+## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/anaconda-icon.png" width="24" style="vertical-align:middle;"/> Recommended Setup
 
 We recommend using **Anaconda**:
 
@@ -89,7 +89,7 @@ Install TensorFlow stack:
 pip install -r TensorFlow_Libs.txt
 ```
 
-## ⚡ GPU Acceleration
+## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/nvidia_64.png" width="24" style="vertical-align:middle;"/> GPU Acceleration & System Requirements
 
 Ensure your system has:
 
@@ -97,7 +97,7 @@ Ensure your system has:
 * cuDNN 8.1.1
 * Compatible NVIDIA driver
 
-## 🖥️ Using with VS Code
+## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/VScode_64.png" width="24" style="vertical-align:middle;"/> Using with VS Code
 
 ```bash
 cd path/to/IVEA/IVEA_main
@@ -127,4 +127,3 @@ Located in the `settings/` folder:
 
 > Changing the model type automatically loads the matching config.
 > For new sessions, defaults are used unless changed manually.
-
