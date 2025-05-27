@@ -17,7 +17,7 @@ The icons were resized from their original sources and are used for visual enhan
 - **Filename**: `nvidia_64.png`
 - **Source**: [IconFinder – NVIDIA Logo](https://www.iconfinder.com/icons/4375024/logo_nvidia_icon)
   
-## 🔧 Usage
+##  Usage
 These icons are referenced in the main `README.md` using inline HTML:
 ```html
 <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/anaconda-icon.png" width="24"/>
