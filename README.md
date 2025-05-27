@@ -31,7 +31,7 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 * Choose the data import type: Video, Directory, or Image Sequence (experimental)
 * Press Start to begin analysis
 
-> GPU is optional for analysis, but required for training.
+> GPU is required for new training but not for refinement.
 
 # Features
 
@@ -58,36 +58,43 @@ Contains:
 
 ## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/anaconda-icon.png" width="24" style="vertical-align:middle;"/> Recommended Setup
 
-We recommend using **Anaconda**:
+We recommend using **Anaconda**, especially for users new to programming.
+
+### 🔹 Step-by-step Guide
+
+1. Download and install Anaconda from [https://www.anaconda.com](https://www.anaconda.com)
+2. Open the Anaconda Prompt (Windows) or terminal (Mac/Linux)
+3. Create and activate the environment:
 
 ```bash
 conda create -n IVEA python=3.8.10
 conda activate IVEA
 ```
 
-Alternatively with `venv`:
+4. Download or clone the project from GitHub:
 
 ```bash
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+git clone https://github.com/AbedChouaib/IVEA.git
+cd IVEA/Python\ Code/IVEA_main
 ```
 
-## 📦 Installing Dependencies
-
-Install base packages:
+5. Install project dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
-
-Install TensorFlow stack:
-
-```bash
 pip install -r TensorFlow_Libs.txt
 ```
+
+6. Open the project using your preferred interface:
+
+   * `jupyter notebook` – to run interactively in notebooks
+   * `jupyter lab` – modern notebook environment
+   * `spyder` – MATLAB-like IDE included with Anaconda
+   * `code .` – if VS Code is installed
+
+> These interfaces are beginner-friendly and allow inspection of results, training behavior, and debugging.
+
+---
 
 ## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/nvidia_64.png" width="24" style="vertical-align:middle;"/> GPU Acceleration & System Requirements
 
@@ -97,17 +104,38 @@ Ensure your system has:
 * cuDNN 8.1.1
 * Compatible NVIDIA driver
 
+GPU is not required for analysis but is **highly recommended** for training.
+
 ## <img src="https://github.com/AbedChouaib/IVEA/blob/main/resources/VScode_64.png" width="24" style="vertical-align:middle;"/> Using with VS Code
 
+### 💡 VS Code Guide for Beginners
+
+1. Download and install [VS Code](https://code.visualstudio.com/)
+2. Open Anaconda Prompt or terminal and run:
+
 ```bash
-cd path/to/IVEA/IVEA_main
+cd path/to/IVEA/Python\ Code/IVEA_main
 code .
 ```
 
-Open Command Palette (Ctrl+Shift+P), select **Python: Select Interpreter**, and choose:
+3. VS Code will open the folder. Now:
 
-* `IVEA` (Conda env), or
-* `venv` (local virtualenv)
+   * Press `Ctrl+Shift+P` → **Python: Select Interpreter**
+   * Choose `conda` environment named `IVEA` or the `venv` you created
+
+4. To run a Python script:
+
+   * Open any `.py` file
+   * Click the ▶️ Run button in the top right, or right-click → Run Python File
+
+5. To run Jupyter Notebooks:
+
+   * Install the Jupyter VS Code extension if prompted
+   * Open `.ipynb` notebooks directly and run cells interactively
+
+> This setup is ideal for users who want to inspect variables, tweak parameters, and visualize training output.
+
+---
 
 ## ▶️ Running IVEA
 
