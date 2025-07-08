@@ -1,0 +1,7 @@
+{
+    "trained_model_path": "C:\\Users\\Abed\\PycharmProjects\\RNN\\data\\models\\eViT_nFixed_tf2.10.1-v_8",
+    "selected_trained_model_name": "Granuvision3",
+    "new_training": false,
+    "inputDir_last_path": "E:/Data/CD63 Markers/Ex-Data/dataset VAMP",
+    "dataset_last_path": "C:\\Users\\Abed\\PycharmProjects\\RNN\\output\\dataset VAMP_c11r14_sc16_f3_t26_m2_new.h5"
+}
