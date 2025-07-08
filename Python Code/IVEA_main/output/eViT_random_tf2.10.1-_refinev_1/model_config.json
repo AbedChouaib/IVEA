@@ -1,0 +1,10 @@
+{
+    "num_fusion": 3,
+    "num_classes": 11,
+    "timeseries": 26,
+    "more_frames": 2,
+    "patch_radius": 16,
+    "file_name": "eViT_random",
+    "model_type": 0,
+    "model_name": "Granuvision3"
+}
