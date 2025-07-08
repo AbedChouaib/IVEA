@@ -1,0 +1,34 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 28, 32, 32, 1)]   0         
+                                                                 
+ encoder3d (Encoder3D)       (None, 28, 4, 4, 128)     157436    
+                                                                 
+ time_distributed (TimeDistr  (None, 28, 2048)         0         
+ ibuted)                                                         
+                                                                 
+ time_distributed_1 (TimeDis  (None, 28, 64)           131136    
+ tributed)                                                       
+                                                                 
+ frame_position_embedding (P  (None, 28, 64)           1792      
+ ositionalEmbedding)                                             
+                                                                 
+ transformer_layer_1 (Transf  (None, 28, 64)           116096    
+ ormerEncoder)                                                   
+                                                                 
+ transformer_layer_2 (Transf  (None, 28, 64)           116096    
+ ormerEncoder)                                                   
+                                                                 
+ flatten_1 (Flatten)         (None, 1792)              0         
+                                                                 
+ dense_5 (Dense)             (None, 128)               229504    
+                                                                 
+ dense_6 (Dense)             (None, 11)                1419      
+                                                                 
+=================================================================
+Total params: 753,479
+Trainable params: 753,479
+Non-trainable params: 0
+_________________________________________________________________

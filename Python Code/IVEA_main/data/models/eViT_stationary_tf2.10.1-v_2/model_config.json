@@ -1,0 +1,10 @@
+{
+    "num_fusion": 3,
+    "num_classes": 10,
+    "timeseries": 20,
+    "more_frames": 20,
+    "patch_radius": 8,
+    "file_name": "eViT_stationary",
+    "model_type": "stationary",
+    "model_name": "NeuroVision1"
+}
