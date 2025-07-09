@@ -71,7 +71,7 @@ This project includes **two essential directories** that must be bundled with th
 2. **`tensorflow/`**
    Includes required native libraries for TensorFlow Java bindings.
 
-> ⚠️ The `.rar` files found inside the `org/` directory must be **extracted** before compiling or running the plugin. These contain pre-compiled classes necessary for neural network inference.
+> ⚠️ The `.rar` files found inside the `org/` directory and the tensorflow.rar file must be **extracted** before compiling your plugin. These contain pre-compiled classes necessary for neural network inference.
 
 ---
 
