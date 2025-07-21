@@ -22,7 +22,7 @@ Intelligent Vesicle Exocytosis Analysis Platform (IVEA) is an open-source Fiji p
 * Download Fiji: [ImageJ Fiji](https://imagej.net/software/fiji/)
 * Download test data: [Test data](https://cloud.hiz-saarland.de/s/zwipttdc6ySCLzC)
 * Install plugin by dragging the JAR into ImageJ or copying it to the `plugins/` directory.
-* Download dtraining dataset: [CTL-INS1-CCs & DRG neurons datasets](https://zenodo.org/records/15498139)
+* Download training dataset: [CTL-INS1-CCs & DRG neurons datasets](https://zenodo.org/records/15498139)
 
 # Usage
 
